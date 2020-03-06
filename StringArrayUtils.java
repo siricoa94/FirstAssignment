@@ -82,9 +82,9 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array) {
        if (checkPangram(array) == true) 
-            System.out.print(str + " is a pangram."); 
+            return true;
         else
-            System.out.print(str+ " is not a pangram.");
+            return false;
     }
     public static boolean checkPangram (String str) 
     { 
@@ -132,9 +132,9 @@ public class StringArrayUtils {
     public static String[] removeValue(String[] array, String valueToRemove) {
         for(int i = 0; i < array.length; i ++) {
         for(int j = i + 1; j < array.length; j++){
-        if(array[i] == array[j]){}}}
+        if(array[i] == array[j]){return (array);}}}
         
-        return (array[j]);
+        return array;
     }
 
     /**
@@ -142,6 +142,9 @@ public class StringArrayUtils {
      * @return array of Strings with consecutive duplicates removes
      */ // TODO
     public static String[] removeConsecutiveDuplicates(String[] array) {
+        for(int i = 0; i < array.length; i ++) {
+            
+        }
         return null;
     }
 
